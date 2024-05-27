@@ -1,0 +1,22 @@
+### MNIST ###
+
+dataset: "mnist"
+task: [[0, 1], [1, 0]]
+indices_file: 'mnist_06-01-36'
+
+t: 0
+method: "cnn"
+multihop: True
+encoding: 'freq'
+device: "cuda:0"
+epochs: 50
+batchsize: 64
+augment: False
+
+defaults:
+  - override hydra/launcher: joblib
+
+hydra:
+  launcher:
+    # override the number of jobs for joblib
+    n_jobs: 1

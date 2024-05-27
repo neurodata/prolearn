@@ -1,0 +1,17 @@
+
+patterns_file: 'synthetic_50'
+
+t: 500
+method: "mlp"
+multihop: True
+device: "cuda:0"
+epochs: 50
+batchsize: 128
+
+defaults:
+  - override hydra/launcher: joblib
+
+hydra:
+  launcher:
+    # override the number of jobs for joblib
+    n_jobs: 10

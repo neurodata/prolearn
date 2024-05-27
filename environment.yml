@@ -1,0 +1,17 @@
+name: prol
+dependencies:
+  - python==3.9
+  - pip
+  - numpy
+  - pip:
+    - torch
+    - torchaudio
+    - torchvision
+    - scipy
+    - matplotlib
+    - seaborn
+    - pandas
+    - scikit-learn
+    - joblib
+    - tqdm
+    - jupyterlab
