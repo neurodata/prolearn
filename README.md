@@ -10,6 +10,12 @@ This repo contains code for prospective learning experiments.
     ```
     conda env create -f environment.yml
     ```
+* After setting up the conda environment `prol`, run the following.
+    ```
+    conda activate prol
+    pip install hydra-core --upgrade
+    pip install hydra-joblib-launcher --upgrade
+    ```
 * Install the `prol` package
     ```
     pip install .
