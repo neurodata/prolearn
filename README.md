@@ -16,6 +16,7 @@ This repo contains code for prospective learning experiments.
     pip install hydra-core --upgrade
     pip install hydra-joblib-launcher --upgrade
     ```
+    The hydra package allows us to train/evaluate models in parallel.
 * Install the `prol` package
     ```
     pip install .
