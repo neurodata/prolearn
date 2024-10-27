@@ -17,8 +17,8 @@ There is MDP such that
 The goal is a to find a sequence h_{>t} that minimizes the expected discounted loss
 """
 
-FILE_PATH = 'synthetic/results/scenario4_disc.npy'
-FIGURE_PATH = 'synthetic/figures/scenario4.pdf'
+FILE_PATH = 'binary/results/scenario4_disc.npy'
+FIGURE_PATH = 'binary/figures/scenario4.pdf'
 
 class Data_Scenario4():
     def __init__(self, p=0.9, τ=30, max_t=1000):

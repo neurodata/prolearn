@@ -6,8 +6,8 @@ matplotlib.rc('font', **font)
 matplotlib.rcParams['figure.facecolor'] = 'white'
 import matplotlib.pyplot as plt
 
-FILE_PATH = 'synthetic/results/proMAP.npy'
-FIGURE_PATH = 'synthetic/figures/proMAP.pdf'
+FILE_PATH = 'binary/results/proMAP.npy'
+FIGURE_PATH = 'binary/figures/proMAP.pdf'
 
 p=0.9
 T=20

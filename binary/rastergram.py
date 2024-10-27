@@ -122,4 +122,4 @@ for i in range(4):
     else:
         ax[i].set_ylabel('')
 
-plt.savefig("synthetic/figures/rastergram.pdf", format="pdf", bbox_inches="tight") 
+plt.savefig("binary/figures/rastergram.pdf", format="pdf", bbox_inches="tight") 

@@ -14,8 +14,8 @@ from joblib import Parallel, delayed
 from scipy.special import beta as B
 from scipy.stats import bernoulli
 
-FILE_PATH = 'synthetic/results/scenario2.npy'
-FIGURE_PATH = 'synthetic/figures/scenario2.pdf'
+FILE_PATH = 'binary/results/scenario2.npy'
+FIGURE_PATH = 'binary/figures/scenario2.pdf'
 
 def loss(truth, pred):
     return (truth - pred)**2

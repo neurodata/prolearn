@@ -7,8 +7,8 @@ import tqdm.auto as tqdm
 DISC = True
 gamma = 0.9
 
-FILE_PATH = 'synthetic/results/scenario3_disc.npy'
-FIGURE_PATH = 'synthetic/figures/scenario3.pdf'
+FILE_PATH = 'binary/results/scenario3_disc.npy'
+FIGURE_PATH = 'binary/figures/scenario3.pdf'
 
 class Data_Scenario3():
     def __init__(self, p=0.9, τ=30, ntest=100):
@@ -145,8 +145,8 @@ if __name__ == "__main__":
         'std_pr': std_pr,
     }
     if DISC:
-        np.save("synthetic/results/scenario3_disc.npy", info, allow_pickle=True)
+        np.save("binary/results/scenario3_disc.npy", info, allow_pickle=True)
     else:
-        np.save("synthetic/results/scenario3_avg.npy", info, allow_pickle=True)
+        np.save("binary/results/scenario3_avg.npy", info, allow_pickle=True)
 
     make_plot()

@@ -7,8 +7,8 @@ matplotlib.rcParams['figure.facecolor'] = 'white'
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-FILE_PATH = 'synthetic/results/scenario1.npy'
-FIGURE_PATH = 'synthetic/figures/scenario1.pdf'
+FILE_PATH = 'binary/results/scenario1.npy'
+FIGURE_PATH = 'binary/figures/scenario1.pdf'
 
 def hypothesis(p, size):
     h = np.random.uniform(low=0, high=1, size=size)
