@@ -21,6 +21,12 @@ In real world applications, the distribution of the data and our goals evolve ov
 
 ## Directory Structure
 
-## Demo (executing scripts for generating figures)
-
 ## Tutorial (Rice's code organized into a notebook)
+
+## Figures
+
+Run the following to generate the results and figures for the binary examples.
+
+```
+sh binary/binary_examples.sh
+```
