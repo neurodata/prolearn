@@ -25,14 +25,13 @@ and CIFAR-10.
 
 ## Dependencies
 
-* Dependendies: CUDA Toolkit 12.1, pytorch 2.3.0
+* Dependendies:  pytorch >= 2.0.0
 * Set up the conda environment:
 
     ```
     conda env create -f environment.yml
     ```
 
-* System requirements:
 
 ## Figures
 
@@ -41,3 +40,13 @@ Run the following to generate the results and figures for the binary examples.
 ```
 sh binary/binary_examples.sh
 ```
+
+If you find this code useful consider citing
+
+    @article{chen2021decision,
+      title={Prospective Learning: Principled Extrapolation to the Future
+      author={De Silva, Ashwin and Ramesh, Rahul and Yang, Rubing and Yu, Siyu and Vogelstein, Joshua T and Chaudhari, Pratik},
+      journal={Advances in neural information processing systems},
+      year={2024}
+    }
+

@@ -1,0 +1,21 @@
+name: prospective
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.9
+  - ipython
+  - cupy=12.0.0
+  - libjpeg-turbo=2.1.5.1
+  - opencv=4.7.0
+  - pytorch=2.0.0
+  - torchvision=0.15.1
+  - cudatoolkit=11.3.1
+  - pip:
+    - pandas==2.0.1
+    - hydra-core==1.2.0
+    - matplotlib==3.7.1
+    - tqdm==4.65.0
+    - hydra-core==1.3.2
+    - seaborn==0.12.2
+
