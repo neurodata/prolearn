@@ -1,0 +1,30 @@
+deploy: False
+seed: 0
+dev: 'cpu'
+
+runs: 100
+
+p: 0.9
+scenario: 1
+prob: False
+llm: "meta-llama/Llama-2-7b-hf"  # "mistralai/Mistral-7B-v0.1", "google/gemma-7b"
+
+
+# Nested configs. Disable hydra logging
+defaults:
+  - _self_
+  - override hydra/job_logging: disabled
+  - override hydra/hydra_logging: disabled
+
+# Disable hydra directory structure
+hydra:
+  output_subdir: Null
+  job:
+    chdir: False
+  run:
+    dir: .
+
+  sweep:
+    dir: .
+    subdir: .
+

@@ -1,8 +1,23 @@
-# Prospective Learning: Learning for a Dynamic Future
+# Prospective Learning: Principled Extrapolation to the Future
 
 ## Overview
 
-In real world applications, the distribution of the data and our goals evolve over time. And we therefore care about performance over time, rather than just instantaneous performance. Yet, the prevailing theoretical framework in artificial intelligence (AI) is probably approximately correct (PAC) learning, which ignores time. Existing strategies (both theoretical and empirical) to address the dynamic nature of distributions and goals have typically assumed that the optimal hypothesis is fixed, rather than dynamic. Here, we enrich PAC learning by allowing the optimal hypothesis to change over time. This generalizes the notion of learning to something we call "prospective learning". We prove that `retrospective' (i.e., canonical) empirical risk minimization cannot solve certain trivially simple prospective learning problems. We then prove that a simple prospective augmentation to empirical risk minimization provably solves certain prospective learning problems. Numerical experiments illustrate that prospective learners can prospectively learn on synthetic  and visual recognition tasks constructed from MNIST and CIFAR, in contrast to their retrospective counterparts. This framework offers a conceptual link towards both (i) improving AI solutions for currently intractable problems, and (ii) better characterizing the naturally intelligent systems that solve them.
+In real-world applications, the distribution of the data, and our goals, evolve
+over time. The prevailing theoretical framework for studying machine learning,
+namely probably approximately correct (PAC) learning, largely ignores time. As a
+consequence, existing strategies to address the dynamic nature of data and goals
+exhibit poor real-world performance. This paper develops a theoretical framework
+called "Prospective Learning" that is tailored for situations when the optimal
+hypothesis changes over time. In PAC learning, empirical risk minimization (ERM)
+is known to be consistent. We develop a learner called Prospective ERM, which
+returns a sequence of predictors that make predictions on future data. We prove that
+the risk of prospective ERM converges to the Bayes risk under certain assumptions
+on the stochastic process generating the data. Prospective ERM, roughly speaking,
+incorporates time as an input in addition to the data. We show that standard ERM
+as done in PAC learning, without incorporating time, can result in failure to learn
+when distributions are dynamic. Numerical experiments illustrate that prospective
+ERM can learn synthetic and visual recognition problems constructed from MNIST
+and CIFAR-10.
 
 <p align="center">
     <img src="assets/cartoon.jpg" alt="Alt text" width="50%"/>
@@ -18,10 +33,6 @@ In real world applications, the distribution of the data and our goals evolve ov
     ```
 
 * System requirements:
-
-## Directory Structure
-
-## Tutorial (Rice's code organized into a notebook)
 
 ## Figures
 
