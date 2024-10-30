@@ -43,9 +43,9 @@ sh binary/binary_examples.sh
 
 If you find this code useful consider citing
 
-    @article{chen2021decision,
+    @article{desilva2024prospective,
       title={Prospective Learning: Principled Extrapolation to the Future
-      author={De Silva, Ashwin and Ramesh, Rahul and Yang, Rubing and Yu, Siyu and Vogelstein, Joshua T and Chaudhari, Pratik},
+      author={De Silva*, Ashwin and Ramesh*, Rahul and Yang*, Rubing and Yu, Siyu and Vogelstein*, Joshua T and Chaudhari*, Pratik},
       journal={Advances in neural information processing systems},
       year={2024}
     }
