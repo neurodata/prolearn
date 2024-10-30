@@ -6,6 +6,8 @@ import torch.nn as nn
 def create_net(cfg):
     if cfg.net.type == 'mlp':
         net = MLP(1, 2, 256)
+    elif cfg.net.type == 'mlp_basic':
+        net = MLP_3L(1, 2, 32)
     elif cfg.net.type == 'mlp3':
         net = MLP(2, 2, 256)
     elif cfg.net.type == 'mlp_mnist':
@@ -73,6 +75,16 @@ class MLP(nn.Module):
         x = self.fc3(x)
         return x
 
+class MLP_3L(nn.Module):
+    def __init__(self, in_dim, out_dim, hidden_dim):
+        super(MLP_3L, self).__init__()
+        self.fc1 = nn.Linear(in_dim, hidden_dim)
+        self.fc2 = nn.Linear(hidden_dim, out_dim)
+
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = self.fc2(x)
+        return x
 
 class CNN(nn.Module):
     """
