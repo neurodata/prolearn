@@ -7,12 +7,12 @@ name: 'mlp_scenario2_period20'
 
 net:
   type: "prospective_mlp"  # mlp, prospective_mlp
-  time_last: False
+  time_last: True
 
 fine_tune: 
 bgd: False
 
-numseeds: 10
+numseeds: 5
 tstart: 50
 tend: 2001
 tskip: 200

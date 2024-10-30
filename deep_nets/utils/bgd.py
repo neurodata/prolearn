@@ -1,3 +1,6 @@
+"""
+Code from https://github.com/igolan/bgd/blob/master/optimizers_lib/bgd_optimizer.py
+"""
 import torch
 from torch.optim.optimizer import Optimizer
 

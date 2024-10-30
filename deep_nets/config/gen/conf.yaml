@@ -2,8 +2,8 @@ deploy: False
 tag: scratch
 seed: 0
 
-num_seeds: 50
-seq_len: 4000
+num_seeds: 5
+seq_len: 50000
 period: 20
 variant: 
 

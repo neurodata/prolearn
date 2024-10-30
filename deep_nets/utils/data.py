@@ -48,10 +48,13 @@ class Scenario3:
         xseq, yseq, taskseq = [], [], []
         tseq = []
         for sd in range(self.num_seeds):
+            # Markov chain with 2 states, reset ever K steps
             if self.variant == 'markov2':
                 dat = self.gen_sequence_markov2(sd, stationary=False)
+            # Markov chain that equilibriates to the stationary distribution
             if self.variant == 'markov2_s':
                 dat = self.gen_sequence_markov2(sd, stationary=True)
+            # Markov chain with 4 states (described in the paper)
             elif self.variant == 'markov4':
                 dat = self.gen_sequence_markov4(sd)
             else:
