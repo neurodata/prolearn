@@ -25,21 +25,31 @@ and CIFAR-10.
 
 ## Dependencies
 
-* Dependendies:  pytorch >= 2.0.0
-* Set up the conda environment:
+To setup a mamba (conda) environment, run
 
-    ```
-    conda env create -f environment.yml
-    ```
+```sh
+micromamba env create -f environment.yml
+```
 
 
 ## Figures
 
 Run the following to generate the results and figures for the binary examples.
 
+```sh
+bash binary/binary_examples.sh
 ```
-sh binary/binary_examples.sh
+
+To run the neural net experiments, run
+```sh
+cd deep_nets
+bash scripts/generate_data.sh
+bash scripts/train_scenario2.sh
+bash scripts/train_scenario3.sh
+bash scripts/create_plots.sh
 ```
+
+## Cite us
 
 If you find this code useful consider citing
 
