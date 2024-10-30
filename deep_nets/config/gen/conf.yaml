@@ -1,0 +1,30 @@
+deploy: False
+tag: scratch
+seed: 0
+
+num_seeds: 50
+seq_len: 4000
+period: 20
+variant: 
+
+data: 'synthetic'  # 'synthetic', 'mnist', 'cifar'
+scenario: 2
+
+
+# Nested configs. Disable hydra logging
+defaults:
+  - _self_
+  - override hydra/job_logging: disabled
+  - override hydra/hydra_logging: disabled
+
+# Disable hydra directory structure
+hydra:
+  output_subdir: Null
+  job:
+    chdir: False
+  run:
+    dir: .
+
+  sweep:
+    dir: .
+    subdir: .
