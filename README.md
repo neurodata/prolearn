@@ -31,6 +31,9 @@ To setup a mamba (conda) environment, run
 micromamba env create -f environment.yml
 ```
 
+## Tutorial
+
+We have written a [tutorial](https://github.com/neurodata/prolearn/blob/main/tutorials/tutorial.ipynb) that provides a quick introduction to prospective learning.
 
 ## Figures
 
